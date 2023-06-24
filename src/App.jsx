@@ -60,6 +60,13 @@ function reducer(state, action) {
         status: "finish",
         highScore: Math.max(state.highScore, state.points),
       };
+    case "restart":
+      return {
+        ...initialState,
+        highScore: state.highScore,
+        questions: state.questions,
+        status: "ready",
+      };
     default:
       throw new Error(`Unhandled action type: ${action.type}`);
   }
@@ -120,6 +127,7 @@ function App() {
             points={points}
             max={maxPossiblePoints}
             highScore={highScore}
+            dispatch={dispatch}
           />
         )}
       </MainContainer>
