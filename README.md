@@ -10,6 +10,11 @@ const [state, dispatch] = useReducer(reducer, initialState);
 
 - state: current state of the application
 - dispatch: function used to dispatch actions to change the state of the application
-- reducer: function that determines changes to an application's state. It uses the action it receives to determine this change.
+- reducer: pure function (no side effects!) that takes current state and action , and return the next state.
+- action: object that describes how to update state
 
-## useReducer vs useState
+### HOW REDUCERS UPDATE STATE
+
+![How Reducers Update State](./markdown_images/how_reducers_update_state.png)
+
+![Example](./markdown_images/example_useReducer.png)
