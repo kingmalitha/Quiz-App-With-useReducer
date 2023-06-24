@@ -1,9 +1,11 @@
-import DateCounter from "./DateCounter";
+import Header from "./Header";
+import MainContainer from "./MainContainer";
 
 function App() {
   return (
     <>
-      <DateCounter />
+      <Header />
+      <MainContainer />
     </>
   );
 }
