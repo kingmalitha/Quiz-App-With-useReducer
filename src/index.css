@@ -38,11 +38,13 @@ body {
 
 .main {
   width: 50rem;
+  margin: 0 auto;
 }
 
 .app-header {
-  width: 66rem;
+  width: 50rem;
   margin-bottom: 4rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
